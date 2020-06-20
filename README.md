@@ -1,2 +1,2 @@
 # html5_practice
-html_practice
+HTML5 Practice sessions
