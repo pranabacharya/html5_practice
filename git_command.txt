@@ -1,0 +1,112 @@
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace
+$ git clone https://github.com/pranabacharya/html5_practice.git
+Cloning into 'html5_practice'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.25 KiB | 7.00 KiB/s, done.
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace
+$ ll
+total 0
+drwxr-xr-x 1 PRANAB 197121 0 Jun 20 21:44 html5_practice/
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace
+$ cd html5_practice/
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git diff README.md
+diff --git a/README.md b/README.md
+index 1e25a8a..2b59ab7 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,2 @@
+ # html5_practice
+-html_practice
++HTML5 Practice sessions
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git add README.md
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git commit -m "readme.md file modified"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'PRANAB@PRANAB-PC.(none)')
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git config --global user.email "****************"
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git config --global user.name "**********"
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git commit -m "readme.md file modified"
+[master c97affb] readme.md file modified
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 159.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pranabacharya/html5_practice.git
+   2c16481..c97affb  master -> master
+
+PRANAB@PRANAB-PC MINGW64 /f/vsc-workspace/html5_practice (master)
+$
