@@ -12,15 +12,23 @@
             color: black;
             font-size: larger;
             border: solid black;
-            background-color: lightslategrey;
+            /* background-color: lightslategrey; */
         }
 
         .alignment {
             text-align: center;
+            background-image: url("eifil_tower.jpg");
+            /* background-repeat: no-repeat; */
+            background-attachment: fixed; 
+            /* background-size: cover; */
+            background-size: 100% 100%;
         }
 
         .font_size {
             font-size: medium;
+        }
+        body {
+           
         }
     </style>
 </head>
@@ -64,9 +72,9 @@
         <br>
         <label for="favcolor">Your fav Color</label>
         <input type="color" id="favcolor" name="favcolor">
-        <br>
+        <br> <br>
         <label for="height">Height (between 3.0ft to 7.0ft)</label>
-        <input type="range" id="height" name="height" min=".3" max="9">
+        <input type="range" id="height" name="height" min=".3" max="9"><br>
         <!-- <label for="email">Email</label>
         <input type="text" id="email" value="email"> -->
         <br>
@@ -80,7 +88,7 @@
         <input type="submit">
         <input type="reset">
         <br>
-        <iframe src="new_prctc.html" style="border: 10px 20px;" width="200px" height="100px"></iframe>
+        <!-- <iframe src="new_prctc.html" style="border: 10px 20px;" width="200px" height="100px"></iframe> -->
     </form>
 
 </body>
