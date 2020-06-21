@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        p {
+            text-align: center;
+            color: black;
+            font-size: larger;
+            border: solid black;
+            background-color: lightslategrey;
+        }
+
+        .alignment {
+            text-align: center;
+        }
+        .font_size {
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body class="alignment" style="background-color: limegreen;">
+
+    <strong>
+        <p>Enter the Informations Below</p>
+    </strong>
+    <form>
+        <b><label for="1stname">First Name</label></b>
+        <input type="text" id="1stname" name="1stname"> <br>
+        <br>
+        <b><label for="lastname">Last Name</label></b>
+        <input type="text" id="lastname" name="lastname"> <br>
+        <br>
+        <b class="font_size"><label for="dob">DOB</label></b>
+        <input type="date" id="dob" value="dob"> <br>
+        <br>
+        <b><label for="nationality">Nationality</label></b>
+        <!-- <input type="text" id="nationality" name="nationality"> -->
+        <select name="nation" id="nationality">
+            <option value="indian">Indian</option>
+            <option value="china">Chinese</option>
+            <option value="italian">Italiano</option>
+            <option value="pakistan">Pakistan</option>
+        </select>
+        <br>
+        <br>
+        <b><label for="gender">Gender</label><br></b>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label> <br>
+        <br>
+
+        <!-- <label for="email">Email</label>
+        <input type="text" id="email" value="email"> -->
+        <br>
+        <label for="emailid">Email</label>
+        <input type="email" id="emailid" name="emailid"> <br>
+        <br>
+        <label for="mobile_number">Tel</label>
+        <input type="tel" id="mobile_number" value="+91-">
+        <br>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+
+
+</body>
+
+
+</html>
