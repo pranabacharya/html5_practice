@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5"> -->
     <title>Forms</title>
     <style>
         p {
@@ -17,18 +18,20 @@
         .alignment {
             text-align: center;
         }
+
         .font_size {
             font-size: medium;
         }
     </style>
 </head>
 
-<body class="alignment" style="background-color: limegreen;">
+<body class="alignment">
 
     <strong>
         <p>Enter the Informations Below</p>
-    </strong>
-    <form>
+    </strong> <br>
+    <br>
+    <form action="/redirect.html">
         <b><label for="1stname">First Name</label></b>
         <input type="text" id="1stname" name="1stname"> <br>
         <br>
@@ -37,7 +40,7 @@
         <br>
         <b class="font_size"><label for="dob">DOB</label></b>
         <input type="date" id="dob" value="dob"> <br>
-        <br> 
+        <br>
         <label for="datemax">Enter a Date before 15-05-2020</label>
         <input type="date" id="dob" name="dob" max="15-05-2020" min="15-05-1995"><br>
         <br>
@@ -59,7 +62,11 @@
         <input type="radio" id="other" name="gender" value="Other">
         <label for="other">Other</label> <br>
         <br>
-
+        <label for="favcolor">Your fav Color</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <br>
+        <label for="height">Height (between 3.0ft to 7.0ft)</label>
+        <input type="range" id="height" name="height" min=".3" max="9">
         <!-- <label for="email">Email</label>
         <input type="text" id="email" value="email"> -->
         <br>
@@ -72,11 +79,10 @@
         <br>
         <input type="submit">
         <input type="reset">
+        <br>
+        <iframe src="new_prctc.html" style="border: 10px 20px;" width="200px" height="100px"></iframe>
     </form>
 
-
-
 </body>
-
 
 </html>
