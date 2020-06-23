@@ -7,52 +7,72 @@
     <!-- <meta http-equiv="refresh" content="5"> -->
     <title>Forms</title>
     <style>
+            @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+        * {
+            font-family: 'Hanalei Fill', cursive;
+            color: currentColor;
+        }
         p {
             text-align: center;
             color: black;
-            font-size: larger;
             border: solid black;
             /* background-color: lightslategrey; */
         }
 
         .alignment {
             text-align: center;
-            background-image: url("eifil_tower.jpg");
+            background-color: tomato;
             /* background-repeat: no-repeat; */
-            background-attachment: fixed; 
+            background-attachment: fixed;
             /* background-size: cover; */
             background-size: 100% 100%;
+            background-blend-mode: multiply;
         }
-
-        .font_size {
-            font-size: medium;
+        footer {
+            background-image:url("/image/marvin-meyer-SYTO3xs06fU-unsplash.jpg") ;
+            background-size: cover;
+            padding: 0em;
+            margin: 0em;
+            
         }
-        body {
-           
+        header {
+            background-image: url("/image/markus-spiske-hvSr_CVecVI-unsplash.jpg") ;
+            background-size: cover;
+            padding:0em ;
+        }
+        div {
+            background-image: url("/image/sean-lim-NPlv2pkYoUA-unsplash.jpg");
+            background-size: cover;
+            margin: 0em;
+        }
+        .footerList{
+            list-style-type: none;
         }
     </style>
 </head>
 
 <body class="alignment">
-
+<header>
     <strong>
         <p>Enter the Informations Below</p>
     </strong> <br>
+</header>
+<div>
     <br>
     <form action="/redirect.html">
-        <b><label for="1stname">First Name</label></b>
+        <b><label for="1stname">First Name &#128516</label></b>
         <input type="text" id="1stname" name="1stname"> <br>
         <br>
-        <b><label for="lastname">Last Name</label></b>
+        <b><label for="lastname">Last Name &#128525</label></b>
         <input type="text" id="lastname" name="lastname"> <br>
         <br>
-        <b class="font_size"><label for="dob">DOB</label></b>
+        <b class="font_size"><label for="dob">DOB &#128118</label></b>
         <input type="date" id="dob" value="dob"> <br>
         <br>
-        <label for="datemax">Enter a Date before 15-05-2020</label>
-        <input type="date" id="dob" name="dob" max="15-05-2020" min="15-05-1995"><br>
+        <!-- <label for="datemax">Enter a Date before 15-05-2020</label>
+        <input type="date" id="dob" name="dob" max="15-05-2020" min="15-05-1995"><br> -->
         <br>
-        <b><label for="nationality">Nationality</label></b>
+        <b><label for="nationality">Nationality &#127937</label></b>
         <!-- <input type="text" id="nationality" name="nationality"> -->
         <select name="nation" id="nationality">
             <option value="indian">Indian</option>
@@ -78,10 +98,10 @@
         <!-- <label for="email">Email</label>
         <input type="text" id="email" value="email"> -->
         <br>
-        <label for="emailid">Email</label>
+        <label for="emailid">Email &#128231</label>
         <input type="email" id="emailid" name="emailid"> <br>
         <br>
-        <label for="mobile_number">Tel</label>
+        <label for="mobile_number">Tel &#128241</label>
         <input type="tel" id="mobile_number" value="+91-">
         <br>
         <br>
@@ -90,7 +110,14 @@
         <br>
         <!-- <iframe src="new_prctc.html" style="border: 10px 20px;" width="200px" height="100px"></iframe> -->
     </form>
-
+</div>
+    <footer>
+        <h3> Thank you for visiting us</h3>
+        <ul class="footerList">
+            <li><a href="https://www.youtube.com" target="_blank"><img src="/png/6-2-youtube-png-picture.png" width="60" height="50"></li></a>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="/png/62860-logo-twitter-computer-icons-free-photo-png.png" width="45" height="40"></li></a>
+        </ul>
+    </footer>
 </body>
 
 </html>
