@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/2995/2995909.svg" type="image/x-icon">
+    <style>
+        header {
+            background-color: purple;
+            padding: 2px;
+        }
+        h6 {
+            padding: 0em;
+            margin: 0em;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: black;
+            color: orange;
+            font-size: 30px;
+            padding: 0em 0em;
+            margin-top: 0em;
+            
+        }
+        .myText {
+            width: 10em;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: darkgoldenrod;
+            color: black;
+            font-size: small;
+        }
+        button {
+            padding: 15px 32px;
+            display: inline-block;
+            background-color: green;
+            border: none;
+            font-size: 29px;
+        }
+        footer {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- <img srcset="https://image.flaticon.com/icons/svg/550/550607.svg" width="60px"> -->
+    <div style="align='middle';">
+        <img src="https://image.flaticon.com/icons/svg/550/550607.svg" width="45px" >
+        <span style="vertical-align: super;">Calculator</span>
+        <img src="https://image.flaticon.com/icons/svg/550/550607.svg" width="45px" >
+
+    </div> 
+    </header>
+    <div>
+        <label for="value1">Enter first Num</label>
+        <input type="number" id="value1" class="myText">
+        <br> <br>
+        <label for="value2">Enter second Num</label>
+        <input type="number" id="value2" class="myText">
+        <br>
+        <br>    
+        <label for="result" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">RESULT</label><br>
+        <input class="myText" type="text" id="result" readonly;>
+        <br> <br>
+        <div>
+            <span><button onclick="Addition()">&#43</button></span>
+            <span><button onclick="Substraction()">&#45</button></span>
+            <span><button onclick="Multiplication()">&#215</button></span>
+            <span><button onclick="Division()">&#247</button></span>
+        </div>
+        <br>
+        <br>
+        <button onclick="resetValue()">Reset</button>
+        <br>
+        <script>
+            function Addition() {
+                var digit1 = parseInt(document.getElementById("value1").value);
+                var digit2 = parseInt(document.getElementById("value2").value);
+                console.log("digit1 is>>>>" + digit1);
+                console.log("digit2 is>>>>" + digit2);
+                var sum = digit1 + digit2;
+                document.getElementById("result").value = sum;
+            }
+            function Substraction() {
+                var digit1 = parseInt(document.getElementById("value1").value);
+                var digit2 = parseInt(document.getElementById("value2").value);
+                var sum = digit1 - digit2;
+                document.getElementById("result").value = sum;
+            }
+            function Multiplication() {
+                var digit1 = parseInt(document.getElementById("value1").value);
+                var digit2 = parseInt(document.getElementById("value2").value);
+                var sum = digit1 * digit2;
+                document.getElementById("result").value = sum;
+            }
+            function Division() {
+                var digit1 = parseInt(document.getElementById("value1").value);
+                var digit2 = parseInt(document.getElementById("value2").value);
+                console.log("reached");
+
+                var sum = digit1 / digit2;
+                document.getElementById("result").value = sum;
+            }
+            function resetValue() {
+                document.getElementById("value1").value = "";
+                document.getElementById("value2").value = "";
+                document.getElementById("result").value = "";
+                console.log("gotit");
+            }
+        </script>
+
+    </div>
+    <footer>
+        <hr>
+        <h6>&#169 &nbsp||PRANAB&nbspACHARYA||&nbsp2020</h6>
+        <div>
+            <h5 style="margin-bottom: 0em; margin-top: 2px; color: lawngreen;">Contact me</h5>
+           <span><a href="https://m.me/acharya.pranab" target="_blank"><img src="https://image.flaticon.com/icons/svg/889/889101.svg" width="21px"></a> </span>
+           &nbsp
+           <span><a href="https://wa.me/917539096216" target="_blank"><img src="https://image.flaticon.com/icons/svg/889/889154.svg" width="21px"></a></span>
+           &nbsp
+           <span><a href="https://www.instagram.com/pranab.acharya/" target="_blank"><img src="https://image.flaticon.com/icons/svg/1409/1409946.svg" width="21px"></a></span>
+        </div>
+    </footer>
+</body>
+
+</html>

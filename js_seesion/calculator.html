@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h6 {
+            padding: 0em;
+            margin: 0em;
+        }
+
+        body {
+            text-align: center;
+            background-image: url(/image/arnold-francisca-f77Bh3inUpE-unsplash.jpg);
+            background-size: cover;
+            color: orange;
+            font-size: 30px;
+            padding: 0em margin:0em;
+            border: 25em;
+            border-color: blanchedalmond;
+        }
+
+        .myText {
+            width: 10em;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: darkgoldenrod;
+            color: white;
+        }
+
+        button {
+            padding: 15px 32px;
+            display: inline-block;
+            background-color: green;
+            border: none;
+            font-size: 29px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Calculator </h1>
+    <div>
+        <label for="value1">Enter first Num</label>
+        <input type="number" id="value1" class="myText">
+        <br> <br>
+        <label for="value2">Enter second Num</label>
+        <input type="number" id="value2" class="myText">
+        <br>
+        <label for="result">Result</label><br>
+        <input class="myText" type="text" id="result" readonly; style="">
+        <br> <br>
+        <div>
+            <span><button onclick="Addition()">&#43</button></span>
+            <span><button onclick="Substraction()">&#45</button></span>
+            <span><button onclick="Multiplication()">&#215</button></span>
+            <span><button onclick="Division()">&#247</button></span>
+        </div>
+        <br>
+        <br>
+        <button onclick="resetValue()">Reset</button>
+        <br>
+        <script>
+            function Addition() {
+                var digit1 = parseInt(document.getElementById("value1").value);
+                var digit2 = parseInt(document.getElementById("value2").value);
+                console.log("digit1 is>>>>" + digit1);
+                console.log("digit2 is>>>>" + digit2);
+                var sum = digit1 + digit2;
+                document.getElementById("result").value = sum;
+            }
+            function Substraction() {
+                var digit1 = parseInt(document.getElementById("value1").value);
+                var digit2 = parseInt(document.getElementById("value2").value);
+                var sum = digit1 - digit2;
+                document.getElementById("result").value = sum;
+            }
+            function Multiplication() {
+                var digit1 = parseInt(document.getElementById("value1").value);
+                var digit2 = parseInt(document.getElementById("value2").value);
+                var sum = digit1 * digit2;
+                document.getElementById("result").value = sum;
+            }
+            function Division() {
+                var digit1 = parseInt(document.getElementById("value1").value);
+                var digit2 = parseInt(document.getElementById("value2").value);
+                console.log("reached");
+
+                var sum = digit1 / digit2;
+                document.getElementById("result").value = sum;
+            }
+            function resetValue() {
+                document.getElementById("value1").value = "";
+                document.getElementById("value2").value = "";
+                document.getElementById("result").value = "";
+                console.log("gotit");
+            }
+        </script>
+
+    </div>
+    <footer>
+        <hr>
+        <h6>&#169 &nbsp||PRANAB||&nbsp2020</h6>
+        <div>
+           <span><a href="https://www.facebook.com/acharya.pranab/"><img src="/png/facebook.png" width="17px"></a> </span>
+           <span><a href="https://wa.me/917539096216"><img src="/png/whatsapp.png" width="17px"></a></span>
+           <span><a href="https://www.instagram.com/pranab.acharya/"><img src="/png/instagram2.png" width="17px"></a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
