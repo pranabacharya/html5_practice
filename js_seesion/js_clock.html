@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+        body {
+            background-image: url(https://images.unsplash.com/photo-1470432581262-e7880e8fe79a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80);
+            background-color: mediumorchid;
+            background-blend-mode: multiply;
+            background-size: initial;
+            margin: auto;
+        }
+
+        .p {
+            text-align: center;
+            font-size: 95px;
+            padding-top: 50px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            letter-spacing : 20px;
+        }
+
+        .clock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: limegreen;
+            font-size: 70px;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 11px;
+        }
+
+        div.absolute {
+            position: absolute;
+            width: 100%;
+            bottom: 10px;
+            text-align: center;
+            color: seashell;
+        }
+
+        h6,
+        h5 {
+            color: lavenderblush;
+            font-size: 15px;
+            line-height: 0em;
+        }
+
+        .blue {color: blue;}
+
+        .red {color: red;}
+
+        .grey {color: grey;}
+
+        .gold {color: gold;}
+
+        .fuchsia {color: fuchsia;}
+    </style>
+</head>
+<header>
+   <b> <p class="p"> <span class="blue">I </span>
+        <span class="red">N</span>
+        <span class="grey">D</span>
+        <span class="gold">I</span>
+        <span class="fuchsia">A</span>
+    </p></b>
+    <div id="ClockDisplay" class="clock" onload="showTime()"></div>
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM";
+
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("ClockDisplay").innerText = time;
+            document.getElementById("ClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+
+        }
+
+        showTime();
+    </script>
+</header>
+
+<body>
+
+</body>
+<footer>
+    <div class="absolute">
+        <h6>PRANAB&nbspACHARYA</h6>
+        <h5>Contact me</h5>
+        <span><a href="https://m.me/acharya.pranab" target="_blank"><img
+                    src="https://image.flaticon.com/icons/svg/889/889101.svg" width="15px"></a> </span>
+        &nbsp
+        &nbsp
+        <span><a href="https://wa.me/917539096216" target="_blank"><img
+                    src="https://image.flaticon.com/icons/svg/889/889154.svg" width="15px"></a></span>
+        &nbsp
+        &nbsp
+        <span><a href="https://www.instagram.com/pranab.acharya/" target="_blank"><img
+                    src="https://image.flaticon.com/icons/svg/1409/1409946.svg" width="15"></a></span>
+    </div>
+</footer>
+
+
+</html>
