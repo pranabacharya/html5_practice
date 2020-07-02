@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading Style Sheet</title>
+    <style>
+        *{
+            text-align: center;
+            background-color: limegreen;
+        }
+        img{
+            float: left;
+        }
+        div.indent{
+            font-size: 30px;
+            text-indent: 100px;
+            letter-spacing: 2px;
+            text-shadow: rgb(0, 0, 255) 3px 3px 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-variant: small-caps;
+        }
+        a:active, a:link{
+            display: inline-block;
+            padding: 20px 70px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+        a:hover{
+            display: inline-block;
+            background-color: black;
+            padding: 20px 70px;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+        }
+        div.button{
+            margin-top: 5px;
+        }
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 50%; 
+            padding: 10px;
+            margin-top: 25px;
+            margin-left: 24em;
+            font-weight: bold;
+        }
+        td,th{
+            border: 2.5px solid purple;
+            border-collapse: collapse;
+            width: 50%; 
+            padding: 15px;
+            font-weight: bold;
+        }
+        tr:nth-child(even){
+            background-color: darkgoldenrod;
+        }
+        td:hover,th:hover{
+            border: 2.5px solid black;
+            border-collapse: collapse;
+            width: 50%; 
+            background-color:dimgray;
+            padding: 15px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+    <span><a href="https://www.instagram.com" target="_blank">Instagram</a></span>
+    <span><a href="https://www.facebook.com" target="_blank">Facebook</a></span>
+    <span><a href="https://www.youtube.com" target="_blank">Youtube</a></span>
+    <span><a href="https://www.twitter.com" target="_blank">Twitter</a></span>
+    <span><a href="https://www.github.com" target="_blank">GitHub</a></span>
+    <span><a href="https://www.gaana.com" target="_blank">Gaana</a></span>
+    </div>
+
+    <br>
+    <div class="indent">In my younger and more vulnerable 
+        years my father gave me some advice that I've been 
+        turning over in my mind ever since. 
+        'Whenever you feel like criticizing anyone,' he told me, 
+        'just remember that all the people in this world haven't 
+        had the advantages that you've had.
+    </div>
+    <table style="overflow-x: auto;">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Pincode</th>
+            <th>Contact Number</th>
+        </tr>
+        <tr>
+            <td>Pranab Acharya</td>
+            <td>25</td>
+            <td>Cuttack</td>
+            <td>754112</td>
+            <td>+917539096216</td>
+        </tr>
+        <tr>
+            <td>Nibedita Acharya</td>
+            <td>27</td>
+            <td>Cuttack</td>
+            <td>754012</td>
+            <td>+918260762556</td>
+        </tr>
+        <tr>
+            <td>Debaprasad Panda</td>
+            <td>34</td>
+            <td>Choudwar</td>
+            <td>752012</td>
+            <td>+919861530330</td>
+        </tr>
+        <tr>
+            <td>Rama</td>
+            <td>85</td>
+            <td>BBSR</td>
+            <td>700012</td>
+            <td>+91986012122</td>
+        </tr>
+        <tr>
+            <td>Hari</td>
+            <td>26</td>
+            <td>BRPD</td>
+            <td>740125</td>
+            <td>+919861098610</td>
+        </tr>
+        <tr>
+            <td>Shyama</td>
+            <td>32</td>
+            <td>SBPR</td>
+            <td>789012</td>
+            <td>+919437094370</td>
+        </tr>
+    </table>
+    <p>
+        <img src="/image/joshua-aragon-FGXqbqbGt5o-unsplash.jpg" alt="coding image" width="240px" >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+  nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+  venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+  Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, 
+  facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus 
+  interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper 
+  ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+  Donec vitae dui eget tellus gravida venenati  s. Integer fringilla congue eros non 
+  fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. 
+  Mauris quis diam velit.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+  nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+  venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+  Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, 
+  facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus 
+  interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper 
+  ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+  Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non 
+  fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. 
+  Mauris quis diam velit.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+  nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+  venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+  Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, 
+  facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus 
+  interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper 
+  ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+  Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non 
+  fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. 
+  Mauris quis diam velit.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+  nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+  venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+  Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, 
+  facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus 
+  interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper 
+  ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+  Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non 
+  fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. 
+  Mauris quis diam velit.
+</p>
+</body>
+</html>

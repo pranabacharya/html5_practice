@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body style="text-align: center;">
+    <h1>Calculator</h1>
+    <div>
+        <label for="number">First number</label><br>
+        <input type="text" id="value"><br>
+        <br>
+        <label for="number2">Second number</label><br>
+        <input type="text" id="value2">
+        <label for="answer"></label><br>
+        <br>
+    </div>
+
+    <span>
+        <br>
+        <input type="text" id="answer" readonly> <br>
+        <br>
+        <button onclick="submit()">Click to Get Ans</button><br>
+        <br>
+    </span>
+    <div>
+        <button onclick="add()">ADDITION</button>
+        <button onclick="sub()">SUBSTRACTION</button>
+        <button onclick="mul()">MULTIPLICATION</button>
+        <button onclick="div()">DIVISION</button><br>
+        <br>
+        <button onclick="ResetValue()"></button>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+</html>
