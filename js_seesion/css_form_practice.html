@@ -11,6 +11,11 @@
         }
         img{
             float: left;
+            opacity: 0.6;
+        }
+        img:hover{
+            opacity: 5;
+            width: 240.5px;
         }
         div.indent{
             font-size: 30px;
@@ -21,23 +26,21 @@
             font-weight: bolder;
             font-variant: small-caps;
         }
-        a:active, a:link{
+        /* a:link,a:active,a:visited{
             display: inline-block;
             padding: 20px 70px;
             text-decoration: none;
             text-align: center;
             color: black;
             font-weight: bold;
+            background-color: rgba(255,0 , 0, .5);
+            border-radius: 10px;
         }
         a:hover{
-            display: inline-block;
-            background-color: black;
-            padding: 20px 70px;
-            text-decoration: none;
-            text-align: center;
-            color: white;
-            font-weight: bolder;
-        }
+            
+            background-color:black;
+            color:mediumaquamarine;
+        } */
         div.button{
             margin-top: 5px;
         }
@@ -55,6 +58,7 @@
             border-collapse: collapse;
             width: 50%; 
             padding: 15px;
+            background-color: darkslategrey;
             font-weight: bold;
         }
         tr:nth-child(even){
@@ -68,18 +72,77 @@
             padding: 15px;
             font-weight: bolder;
         }
+        h1::first-letter{
+            font-size: 10vw;
+            color:blue;
+            text-shadow: 3px 3px 5px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            z-index: 1;
+            top: 0;
+        }
+        li{
+            float: right;
+        }
+        li a, .dropbtn{
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: #333;
+        }
+        li a:hover, .dropdown:hover, .dropbtn{
+            background-color: black;
+            color: white;
+        }
+        li.dropdown{
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 15px 8px 25px 5px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: black
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <div class="button">
-    <span><a href="https://www.instagram.com" target="_blank">Instagram</a></span>
-    <span><a href="https://www.facebook.com" target="_blank">Facebook</a></span>
-    <span><a href="https://www.youtube.com" target="_blank">Youtube</a></span>
-    <span><a href="https://www.twitter.com" target="_blank">Twitter</a></span>
-    <span><a href="https://www.github.com" target="_blank">GitHub</a></span>
-    <span><a href="https://www.gaana.com" target="_blank">Gaana</a></span>
+    <div>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://web.whatsapp.com" target="_blank">WhatsApp Web</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="#none">More</a>
+            <div class="dropdown-content">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.gmail.com" target="_blank">Gmail</a>
+                <a href="https://drive.google.com" target="_blank">Google Drive</a>
+            </div>
+        </li>
+        <li style="float:left"><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+    </ul>
     </div>
-
     <br>
     <div class="indent">In my younger and more vulnerable 
         years my father gave me some advice that I've been 
@@ -88,7 +151,7 @@
         'just remember that all the people in this world haven't 
         had the advantages that you've had.
     </div>
-    <table style="overflow-x: auto;">
+    <!-- <table style="overflow-x: auto;">
         <tr>
             <th>Name</th>
             <th>Age</th>
@@ -138,8 +201,8 @@
             <td>789012</td>
             <td>+919437094370</td>
         </tr>
-    </table>
-    <p>
+    </table> -->
+    <p style="font-size: 2vw;">
         <img src="/image/joshua-aragon-FGXqbqbGt5o-unsplash.jpg" alt="coding image" width="240px" >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
   nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
@@ -182,5 +245,8 @@
   fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. 
   Mauris quis diam velit.
 </p>
+<h1>Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+    Fusce luctus vestibulum augue ut aliquet.</h1>
+    
 </body>
 </html>
